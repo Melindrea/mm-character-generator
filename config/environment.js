@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mm-character-generator',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://brilliant-torch-1499.firebaseio.com/mm/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
